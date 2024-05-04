@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	  <groups>
+		  <run>
+			  <include name="smoke"></include>
+			  <exclude name="FT"></exclude>
+		  </run>
+	  </groups>
+    <classes>
+      <class name="TestingScripts.RegisterTest"/>
+      <class name="TestingScripts.DependsOnMehodsTest"/>
+      <class name="StylespaFurnitureTest.PlaceOrderTest"/>
+      <class name="TestingScripts.InvocationCount"/>
+      <class name="StylespaFurnitureTest.RegisterTest"/>
+      <class name="StylespaFurnitureTest.LoginTest"/>
+      <class name="StylespaFurnitureTest.AddToCartTest"/>
+      <class name="TestingScripts.ElectronicsTest"/>
+      <class name="StylespaFurnitureTest.WishlistTest"/>
+      <class name="StylespaFurnitureTest.PromotionalCodeTest"/>
+      <class name="TestingScripts.BooksTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
